@@ -1,0 +1,1092 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>数据库实施 · learn-database-principle</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zander Zhao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/css/gitalk.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1057.html" />
+    
+    
+    <link rel="prev" href="1055.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    本书简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据管理理论</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="1010.html">
+            
+                <a href="1010.html">
+            
+                    
+                    数据库简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="1011.html">
+            
+                <a href="1011.html">
+            
+                    
+                    数据与数据管理的发展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="1012.html">
+            
+                <a href="1012.html">
+            
+                    
+                    信息与数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="1013.html">
+            
+                <a href="1013.html">
+            
+                    
+                    数据处理和数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="1014.html">
+            
+                <a href="1014.html">
+            
+                    
+                    大数据分析与管理技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="1015.html">
+            
+                <a href="1015.html">
+            
+                    
+                    数据库系统概述--已有设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="1062.html">
+            
+                <a href="1062.html">
+            
+                    
+                    数据库与数据库管理系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="1063.html">
+            
+                <a href="1063.html">
+            
+                    
+                    功能-管理系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="1064.html">
+            
+                <a href="1064.html">
+            
+                    
+                    特征及分类-管理系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="1065.html">
+            
+                <a href="1065.html">
+            
+                    
+                    体系结构-数据库系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="1066.html">
+            
+                <a href="1066.html">
+            
+                    
+                    三级模式-数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="1016.html">
+            
+                <a href="1016.html">
+            
+                    
+                    数据模型--如何设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="1017.html">
+            
+                <a href="1017.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.1" data-path="1018.html">
+            
+                <a href="1018.html">
+            
+                    
+                    定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2" data-path="1019.html">
+            
+                <a href="1019.html">
+            
+                    
+                    三要素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="1020.html">
+            
+                <a href="1020.html">
+            
+                    
+                    数据模型的3种类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.1" data-path="1021.html">
+            
+                <a href="1021.html">
+            
+                    
+                    逻辑模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.1.1" data-path="1022.html">
+            
+                <a href="1022.html">
+            
+                    
+                    层次模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.1.2" data-path="1023.html">
+            
+                <a href="1023.html">
+            
+                    
+                    网状模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.1.3" data-path="1024.html">
+            
+                <a href="1024.html">
+            
+                    
+                    关系模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.1.4" data-path="1025.html">
+            
+                <a href="1025.html">
+            
+                    
+                    面向对象模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.2" data-path="1026.html">
+            
+                <a href="1026.html">
+            
+                    
+                    概念模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.3" data-path="1030.html">
+            
+                <a href="1030.html">
+            
+                    
+                    物理模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">关系数据库理论</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="1033.html">
+            
+                <a href="1033.html">
+            
+                    
+                    定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="1032.html">
+            
+                <a href="1032.html">
+            
+                    
+                    理论基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="1035.html">
+            
+                <a href="1035.html">
+            
+                    
+                    关系模型基本要素--怎么组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1.1" data-path="1036.html">
+            
+                <a href="1036.html">
+            
+                    
+                    关系--关系模型的数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.2" data-path="1037.html">
+            
+                <a href="1037.html">
+            
+                    
+                    关系操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.1.3" data-path="1038.html">
+            
+                <a href="1038.html">
+            
+                    
+                    关系的完整性约束
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="1039.html">
+            
+                <a href="1039.html">
+            
+                    
+                    关系代数--操纵语言的数学表达
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.2.1" data-path="1040.html">
+            
+                <a href="1040.html">
+            
+                    
+                    基本集合运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.2" data-path="1041.html">
+            
+                <a href="1041.html">
+            
+                    
+                    关系运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="1061.html">
+            
+                <a href="1061.html">
+            
+                    
+                    规范化理论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.3.1" data-path="1042.html">
+            
+                <a href="1042.html">
+            
+                    
+                    函数依赖--表内与表间的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.2" data-path="1043.html">
+            
+                <a href="1043.html">
+            
+                    
+                    关系模式的范式--关系模式的规范化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.3.2.1" data-path="1044.html">
+            
+                <a href="1044.html">
+            
+                    
+                    第一范式(1NF)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.2.2" data-path="1045.html">
+            
+                <a href="1045.html">
+            
+                    
+                    第二范式(2NF)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.2.3" data-path="1046.html">
+            
+                <a href="1046.html">
+            
+                    
+                    第三范式(3NF)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.2.4" data-path="1047.html">
+            
+                <a href="1047.html">
+            
+                    
+                    BC范式(BCNF)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3.2.5" data-path="1048.html">
+            
+                <a href="1048.html">
+            
+                    
+                    分解与规范化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="1049.html">
+            
+                <a href="1049.html">
+            
+                    
+                    设计开发技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="1051.html">
+            
+                <a href="1051.html">
+            
+                    
+                    需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="1052.html">
+            
+                <a href="1052.html">
+            
+                    
+                    数据库结构设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.2.1" data-path="1053.html">
+            
+                <a href="1053.html">
+            
+                    
+                    概念结构设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.2.1.1" data-path="1029.html">
+            
+                <a href="1029.html">
+            
+                    
+                    E-R图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.2" data-path="1054.html">
+            
+                <a href="1054.html">
+            
+                    
+                    逻辑结构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2.3" data-path="1055.html">
+            
+                <a href="1055.html">
+            
+                    
+                    物理结构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3.3" data-path="1056.html">
+            
+                <a href="1056.html">
+            
+                    
+                    数据库实施
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="1057.html">
+            
+                <a href="1057.html">
+            
+                    
+                    运行和维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="1058.html">
+            
+                <a href="1058.html">
+            
+                    
+                    数据库连接技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="1059.html">
+            
+                <a href="1059.html">
+            
+                    
+                    数据库接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="1060.html">
+            
+                <a href="1060.html">
+            
+                    
+                    模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="1999.html">
+            
+                <a href="1999.html">
+            
+                    
+                    end1061
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >数据库实施</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6570;&#x636E;&#x5E93;&#x5B9E;&#x65BD;">&#x6570;&#x636E;&#x5E93;&#x5B9E;&#x65BD;</h1>
+<p>&#x6570;&#x636E;&#x5E93;&#x5B9E;&#x65BD;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x51E0;&#x65B9;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ol>
+<li><h3 id="&#x5EFA;&#x7ACB;&#x6570;&#x636E;&#x5E93;&#x7ED3;&#x6784;">&#x5EFA;&#x7ACB;&#x6570;&#x636E;&#x5E93;&#x7ED3;&#x6784;</h3>
+</li>
+</ol>
+<p>&#x6839;&#x636E;&#x7269;&#x7406;&#x7ED3;&#x6784;&#x7684;&#x8BBE;&#x8BA1;&#x7ED3;&#x679C;&#xFF0C;&#x9009;&#x5B9A;&#x76F8;&#x5E94;&#x7684;DBMS&#x3002;&#x7136;&#x540E;&#x5728;&#x8BE5;DBMS&#x7CFB;&#x7EDF;&#x4E2D;&#x5229;&#x7528;&#x5176;&#x63D0;&#x4F9B;&#x7684;DDL&#x8BED;&#x8A00;&#x5EFA;&#x7ACB;&#x6570;&#x636E;&#x5E93;&#x7ED3;&#x6784;&#x3002;</p>
+<pre><code class="lang-SQL">&#x4F8B;&#x5982;&#xFF0C;&#x5728;SQL Server&#x4E2D;&#xFF0C;&#x53EF;&#x7528;&#x4E0B;&#x5217;&#x7684;SQL&#x8BED;&#x53E5;&#x6765;&#x5206;&#x522B;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x548C;&#x6570;&#x636E;&#x8868;&#xFF1A;
+    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> database_name
+    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> table_name
+</code></pre>
+<p>&#x5728;&#x6570;&#x636E;&#x5E93;&#x7ED3;&#x6784;&#x5B9A;&#x4E49;&#x4EE5;&#x540E;&#xFF0C;&#x901A;&#x8FC7;DBMS&#x63D0;&#x4F9B;&#x7684;&#x7F16;&#x8BD1;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x7F16;&#x8BD1;&#x540E;&#x5373;&#x53EF;&#x5F62;&#x6210;&#x4E86;&#x5B9E;&#x9645;&#x53EF;&#x8FD0;&#x884C;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;&#x4F46;&#x8FD9;&#x65F6;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8FD8;&#x4EC5;&#x4EC5;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#xFF0C;&#x5185;&#x5BB9;&#x662F;&#x7A7A;&#x7684;&#x3002;&#x8981;&#x771F;&#x6B63;&#x53D1;&#x6325;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x7F16;&#x5199;&#x76F8;&#x5E94;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5728;&#x5176;&#x4E2D;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x201C;&#x6709;&#x8840;&#x6709;&#x8089;&#x201D;&#x7684;&#x52A8;&#x6001;&#x7CFB;&#x7EDF;&#x3002;</p>
+<ol>
+<li><h3 id="&#x88C5;&#x8F7D;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#xFF0C;&#x7F16;&#x5199;&#x8C03;&#x8BD5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;">&#x88C5;&#x8F7D;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#xFF0C;&#x7F16;&#x5199;&#x8C03;&#x8BD5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</h3>
+</li>
+</ol>
+<p>&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x4EE3;&#x7801;&#x7F16;&#x5199;&#x548C;&#x8C03;&#x8BD5;&#x5219;&#x5728;&#x6570;&#x636E;&#x5E93;&#x7ED3;&#x6784;&#x521B;&#x5EFA;&#x4EE5;&#x540E;&#x8FDB;&#x884C;&#x7684;&#x3002;</p>
+<p>&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x7F16;&#x5199;&#x548C;&#x8C03;&#x8BD5;&#x662F;&#x4E00;&#x4E2A;&#x53CD;&#x590D;&#x8FDB;&#x884C;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5176;&#x4E2D;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x6027;&#x8BBF;&#x95EE;&#x3002;&#x8FD9;&#x65F6;&#x5E94;&#x8BE5;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x88C5;&#x8F7D;&#x4E00;&#x4E9B;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x968F;&#x673A;&#x4EA7;&#x751F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x4F5C;&#x4E3A;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#xFF08;&#x4F46;&#x8FD9;&#x4E9B;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x8981;&#x7559;&#x6709;&#x526F;&#x672C;&#xFF09;&#x3002;</p>
+<ol>
+<li><h3 id="&#x8BD5;&#x8FD0;&#x884C;">&#x8BD5;&#x8FD0;&#x884C;</h3>
+</li>
+</ol>
+<p>&#x3000;&#x3000;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8C03;&#x8BD5;&#x4EE5;&#x540E;&#xFF0C;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x52A0;&#x8F7D;&#x4E00;&#x4E9B;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x5E76;&#x8FD0;&#x884C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F46;&#x8FD8;&#x6CA1;&#x6709;&#x6B63;&#x5F0F;&#x6295;&#x5165;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x53EA;&#x662F;&#x60F3;&#x67E5;&#x770B;&#x6570;&#x636E;&#x5E93;&#x5E94;&#x7528;&#x7CFB;&#x7EDF;&#x5404;&#x65B9;&#x9762;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x79CD;&#x8FD0;&#x884C;&#x5C31;&#x79F0;&#x4E3A;&#x8BD5;&#x8FD0;&#x884C;&#xFF0C;&#x8BD5;&#x8FD0;&#x884C;&#x4E5F;&#x79F0;&#x8054;&#x5408;&#x8C03;&#x8BD5;&#xFF0C;</p>
+<p>&#x3000;&#x3000;&#x8BD5;&#x8FD0;&#x884C;&#x4E0E;&#x8C03;&#x8BD5;&#x7684;&#x533A;&#x522B;&#xFF1A;&#x4E24;&#x8005;&#x76EE;&#x7684;&#x57FA;&#x672C;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x4FA7;&#x91CD;&#x70B9;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;&#x8C03;&#x8BD5;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x53D1;&#x73B0;&#x7CFB;&#x7EDF;&#x4E2D;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x4EE5;&#x4FBF;&#x53CA;&#x65F6;&#x7EA0;&#x6B63;&#xFF1B;&#x8BD5;&#x8FD0;&#x884C;&#x867D;&#x7136;&#x4E5F;&#x9700;&#x8981;&#x53D1;&#x73B0;&#x9519;&#x8BEF;&#xFF0C;&#x4F46;&#x5B83;&#x66F4;&#x6CE8;&#x91CD;&#x4E8E;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x7684;&#x68C0;&#x6D4B;&#x548C;&#x8BC4;&#x4EF7;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x8BD5;&#x8FD0;&#x884C;&#x7684;&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;&#x5305;&#x62EC;</p>
+<ul>
+<li>&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x68C0;&#x6D4B;&#x3002;&#x5305;&#x62EC;&#x6D4B;&#x8BD5;&#x7CFB;&#x7EDF;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x3001;&#x5B89;&#x5168;&#x6027;&#x548C;&#x6548;&#x7387;&#x7B49;&#x65B9;&#x9762;&#x7684;&#x6307;&#x6807;&#xFF0C;&#x67E5;&#x770B;&#x662F;&#x5426;&#x7B26;&#x5408;&#x8BBE;&#x8BA1;&#x65F6;&#x8BBE;&#x5B9A;&#x7684;&#x76EE;&#x6807;&#x3002;</li>
+<li>&#x7CFB;&#x7EDF;&#x529F;&#x80FD;&#x68C0;&#x6D4B;&#x3002;&#x8FD0;&#x884C;&#x7CFB;&#x7EDF;&#xFF0C;&#x6309;&#x5404;&#x4E2A;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x9010;&#x9879;&#x68C0;&#x6D4B;&#xFF0C;&#x68C0;&#x67E5;&#x7CFB;&#x7EDF;&#x7684;&#x5404;&#x4E2A;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x662F;&#x5426;&#x80FD;&#x591F;&#x5B8C;&#x6210;&#x65E2;&#x5B9A;&#x7684;&#x529F;&#x80FD;&#x3002;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x68C0;&#x6D4B;&#x7ED3;&#x679C;&#x4E0D;&#x7B26;&#x5408;&#x8BBE;&#x8BA1;&#x76EE;&#x6807;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x8BBE;&#x8BA1;&#x9636;&#x6BB5;&#xFF0C;&#x91CD;&#x65B0;&#x4FEE;&#x6539;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x6216;&#x6570;&#x636E;&#x5E93;&#x7ED3;&#x6784;&#xFF0C;&#x76F4;&#x5230;&#x6EE1;&#x8DB3;&#x8981;&#x6C42;&#x4E3A;&#x6B62;&#x3002;</p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1055.html" class="navigation navigation-prev " aria-label="Previous page: 物理结构设计">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1057.html" class="navigation navigation-next " aria-label="Next page: 运行和维护">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据库实施","level":"3.3.3","depth":2,"next":{"title":"运行和维护","level":"3.3.4","depth":2,"path":"page/1057.md","ref":"page/1057.md","articles":[]},"previous":{"title":"物理结构设计","level":"3.3.2.3","depth":3,"path":"page/1055.md","ref":"page/1055.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","katex@git+https://github.com/plugins-zander/gitbook-plugin-katex.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","mygitalk@git+https://github.com/plugins-zander/gitbook-plugin-mygitalk.git","edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git","sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git","gtag@git+https://github.com/plugins-zander/gitbook-plugin-gtag.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git","page-toc@git+https://github.com/plugins-zander/gitbook-plugin-page-toc.git"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"sitemap-general":{"prefix":"https://zlogs.net/learn-database-principle/"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"gtag":{"token":"UA-149127400-1"},"highlight":{},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"364365ceb2659b383d73","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["zanderzhao"],"createIssueManually":false,"distractionFreeMode":false,"repo":"talk","owner":"zanderzhao","enableHotKey":true,"clientSecret":"447ef6648e9dfffe2e2a65c34c8ead1dd4b7af54","pagerDirection":"last","labels":["Gitalk"]},"edit-link":{"label":"EDIT","base":"https://github.com/ZanderZhao/learn-database-principle/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Zander Zhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"learn-database-principle","language":"zh-hans","gitbook":"3.2.3","description":"learn-database-principle - Zander's Learn Book"},"file":{"path":"page/1056.md","mtime":"2020-04-09T07:48:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-09T07:50:46.302Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gtag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
